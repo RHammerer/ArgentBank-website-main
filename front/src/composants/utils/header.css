@@ -1,0 +1,13 @@
+.nav-logged{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+margin: 20px;
+}
+
+.ul-logged-user{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+}

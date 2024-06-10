@@ -1,0 +1,38 @@
+
+
+.account-content-wrapper {
+    flex: 1;
+    width: 100%;
+}
+
+.account-title {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.account-amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+  
+.account-amount-description {
+    margin: 0;
+}
+
+/* Transaction */
+.transaction-button {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    background-color: #00bc77;
+    border-color: #00bc77;
+    color: #fff;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 8px;
+}

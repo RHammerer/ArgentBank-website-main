@@ -1,0 +1,27 @@
+.edit-name-button{
+    padding: 10px;
+    background-color: #00bc77;
+    color: white;
+    text-decoration: none;
+  }
+
+ 
+  .account-section{
+    background-color: #12002b;
+  }
+  .account {
+    position: relative;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    text-align: left;
+    width: 80%; 
+}
+
