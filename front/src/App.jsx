@@ -6,26 +6,13 @@ import logoChat from "../src/images/icon-chat.png";
 import logoSecurity from "../src/images/icon-security.png";
 
 import { useDispatch, useSelector } from "react-redux";
+import Navigation from "./composants/Navigation/Navigation";
 
 function App() {
   const token = useSelector((store) => store.auth.token);
   return (
     <>
-      <nav className="main-nav">
-        <a className="main-nav-logo" href="./index.html">
-          <img
-            className="main-nav-logo-image"
-            src="../src/images/argentbanklogo.png"
-            alt="Argent Bank Logo"
-          />
-          <h1 className="sr-only">Argent Bank</h1>
-        </a>
-        <div>
-          <NavLink to="/login" className="main-nav-item">
-            Sign in
-          </NavLink>
-        </div>
-      </nav>
+      <Navigation />
       <main>
         <div className="hero">
           <section className="hero-content">

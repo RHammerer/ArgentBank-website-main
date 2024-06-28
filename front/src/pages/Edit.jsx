@@ -5,6 +5,7 @@ import "./edit.css";
 import Account from "../composants/Account/Account";
 import Footer from "../composants/Footer";
 import Header from "../composants/utils/Header";
+import Navigation from "../composants/Navigation/Navigation";
 
 export default function Edit() {
   const token = useSelector((store) => store.auth.token);
@@ -44,7 +45,7 @@ export default function Edit() {
   });
   return (
     <>
-      <Header />
+      <Navigation />
       <main>
         <h1>Edit user info</h1>
         <div className="form">

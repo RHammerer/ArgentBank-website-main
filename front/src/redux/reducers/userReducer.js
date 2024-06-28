@@ -9,8 +9,9 @@ const userSlice = createSlice({
   },
   reducers: {
     logoutUser: (state) => {
-      state.profile = null;
-      state.isLoggedIn = false;
+      state.userName = null;
+      state.firstName = null;
+      state.lastName = null;
     },
     getInfoUser: (state, action) => {
       state.userName = action.payload.userName;
@@ -18,18 +19,6 @@ const userSlice = createSlice({
       state.lastName = action.payload.lastName;
     },
   },
-  // extraReducers: (builder) => {
-  //   builder
-  //     .addCase(fetchUserProfile.fulfilled, (state, action) => {
-  //       state.profile = action.payload;
-  //     })
-  //     .addCase(fetchUserProfile.rejected, (state, action) => {
-  //       state.error = action.error.message;
-  //     })
-  //     .addCase(loginUser.rejected, (state, action) => {
-  //       state.error = action.error.message;
-  //     });
-  // },
 });
 
 export const { logoutUser, getInfoUser } = userSlice.actions;

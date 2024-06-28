@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 import "./login.css";
+import Navigation from "../composants/Navigation/Navigation";
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -42,26 +43,7 @@ export default function Login() {
   };
   return (
     <>
-      <nav className="main-nav">
-        <ul className="sign-in-ul">
-          <h1 className="sr-only">Argent Bank</h1>
-
-          <li>
-            <NavLink to="/" className="main-nav">
-              <img
-                className="main-nav-logo-image"
-                src="../src/images/argentbanklogo.png"
-                alt="Argent Bank Logo"
-              />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/login" className="main-nav">
-              Sign in
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+      <Navigation />
       <main className="main bg-dark">
         <section className="sign-in-content">
           <i className="fa fa-user-circle sign-in-icon"></i>

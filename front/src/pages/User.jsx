@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { getInfoUser } from "../redux/reducers/userReducer";
 import Account from "../composants/Account/Account.jsx";
 import Footer from "../composants/Footer.jsx";
+import Navigation from "../composants/Navigation/Navigation.jsx";
 
 export default function User() {
   const token = useSelector((store) => store.auth.token);
@@ -40,26 +41,7 @@ export default function User() {
   console.log(user);
   return (
     <>
-      <nav className="main-nav">
-        <NavLink to="/" className="main-nav">
-          <img
-            className="main-nav-logo-image"
-            src="../src/images/argentbanklogo.png"
-            alt="Argent Bank Logo"
-          />
-        </NavLink>
-        <h1 className="sr-only">Argent Bank</h1>
-        <div>
-          <a className="main-nav-item" href="./user.html">
-            <i className="fa fa-user-circle"></i>
-            {user.userName}
-          </a>
-          <a className="main-nav-item" href="./index.html">
-            <i className="fa fa-sign-out"></i>
-            Sign Out
-          </a>
-        </div>
-      </nav>
+      <Navigation />
       <main className="main bg-dark">
         <div className="header">
           <h1>
